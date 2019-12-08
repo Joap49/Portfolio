@@ -1,0 +1,23 @@
+{
+  "name": "bideo.js",
+  "main": "bideo.js",
+  "homepage": "https://joap49.github.io",
+  "authors": [
+    "Joann"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "*.png",
+    "*.md",
+    "*.html",
+    "main.js",
+    "*.mp4",
+    "*.jp*"
+  ]
+}

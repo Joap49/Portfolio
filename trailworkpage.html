@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Joann Pilika</title>
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+  <link href="https://fonts.googleapis.com/css?family=Questrial|Tomorrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <a href="index.html" class="nameLogo">Joann Pilika</a>
+
+  <div class="navbar" id="navbar">
+    <!-- buttons -->
+    <!-- <a href="index.html">home</a> -->
+    <a href="work.html">work</a>
+    <a href="resume.html">resume</a>
+    <a href="about.html">about</a>
+  </div>
+
+
+  <div class="mainContainer" id="mainContainer">
+    <div class="box1" id="top">
+      <div class="workTitle">FAKE PROJECT</div> <!-- title of work goes here -->
+      <div class="description">This is a fake project that I'm using to test out this webpage. Lowkey, I don't have design work I can really show off, but let's do this thing. Also, I really hope class gets cancelled tomorrow because I am so not
+        prepared to hand in this paper I haven't started. </div> <!-- description here -->
+      <div class="workImage">
+        <div class="row">
+          <div class="column">
+            <img src="monumentvalley.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="sunset.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="simple-page.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="Aqua-page.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="img1_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="img2_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="img3_wide.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="img4_wide.jpg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+              <img class="demo" src="monumentvalley.png" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="sunset.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="simple-page.jpeg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+              <img class="demo" src="Aqua-page.jpeg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="workTitle">FAKE PROJECT 2</div> <!-- title of work goes here -->
+      <div class="description">This is a fake project that I'm using to test out this webpage. Lowkey, I don't have design work I can really show off, but let's do this thing. Also, I really hope class gets cancelled tomorrow because I am so not
+        prepared to hand in this paper I haven't started. </div> <!-- description here -->
+      <div class="workImage"> <img src="sunset.jpeg" alt=""></div>
+    </div>
+
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="ScrollUp.png" alt="click of tap to scroll to top of page"></button>
+
+  <div class="footer">website created by Joann Pilika</div>
+  <!-- <div class="ScrollUp">
+    <a href="#top"><img src="ScrollUp.png" alt="click of tap to scroll to top of page"></a>
+
+  </div> -->
+
+
+  <script src="workpage.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+
+</html>
+<!-- Images used to open the lightbox -->

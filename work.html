@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Joann Pilika</title>
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+  <link href="https://fonts.googleapis.com/css?family=Questrial|Tomorrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <a href="index.html" class="nameLogo">Joann Pilika</a>
+
+  <div class="navbar" id="navbar">
+    <!-- buttons -->
+    <!-- <a href="index.html">home</a> -->
+    <a href="work.html">work</a>
+    <a href="resume.html">resume</a>
+    <a href="about.html">about</a>
+  </div>
+
+
+  <div class="mainContainer" id="mainContainer">
+    <div class="box1" id="top">
+      <div class="workTitle">USER INTERFACE: Timer</div> <!-- title of work goes here -->
+      <div class="description"> This timer user interface uses intervals to display time. The user will set how long the timer will be and the intervals they'd like displayed. After each interval is completed, a ring will slowly fade in. This interface was created used Adobe InDesign.  </div> <!-- description here -->
+      <div class="workImage">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 7</div> -->
+            <img src="ui1.jpg" style="width:100%">
+            <!-- <div class="text">homepage</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">2 / 7</div> -->
+            <img src="ui2.jpg" style="width:100%">
+            <!-- <div class="text">set timer</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">3 / 7</div> -->
+            <img src="ui3.jpg" style="width:100%">
+            <!-- <div class="text">set timer process</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">4 / 7</div> -->
+            <img src="ui4.jpg" style="width:100%">
+            <!-- <div class="text">set intervals</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">5 / 7</div> -->
+            <img src="ui5.jpg" style="width:100%">
+            <!-- <div class="text">timer almost done</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">6 / 7</div> -->
+            <img src="ui6.jpg" style="width:100%">
+            <!-- <div class="text">timer reaches end</div> -->
+          </div>
+
+          <div class="mySlides fade">
+            <!-- <div class="numbertext">7 / 7</div> -->
+            <img src="ui7.jpg" style="width:100%">
+            <!-- <div class="text">timer done</div> -->
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="box2 box">
+      <div class="workTitle">Bioinformatics course design</div> <!-- title of work goes here -->
+      <div class="description">This is a sample of the many designs created for a graduate Bioinformatics course at Tandon Online, NYU Tandon's online graduate program. Designs are usually created with guidance from course textbooks and lecture presentations provided by professors.   </div> <!-- description here -->
+      <div class="workImage normImage"> <img src="tandononline.png" alt="Design for Bioinformatics course at Tandon Online"></div>
+    </div>
+
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="ScrollUp.png" alt="click of tap to scroll to top of page"></button>
+
+  <div class="footer">website created by Joann Pilika</div>
+  <!-- <div class="ScrollUp">
+    <a href="#top"><img src="ScrollUp.png" alt="click of tap to scroll to top of page"></a>
+
+  </div> -->
+
+
+  <script src="workpage.js"></script>
+  <script src="lightbox.js"></script>
+</body>
+
+</html>
