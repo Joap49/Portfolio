@@ -217,7 +217,7 @@ body {
   grid-template-columns: repeat(8, 1fr); /*how many columns then how big*/
   grid-template-rows: auto;
   grid-column-gap: 2.5vmin;
-  grid-row-gap: 3vmin;
+  grid-row-gap: 10vmin;
   grid-template-areas:
     ". . . title title . . ."
     ". . box1 box1 box1 box1 . ."
@@ -225,6 +225,8 @@ body {
     ". . box3 box3 box3 box3 . . "
     ". . box4 box4 box4 box4 . . "
     ". . box5 box5 box5 box5 . . "
+    ". . box6 box6 box6 box6 . . "
+    ". . box7 box7 box7 box7 . . "
     ". footer footer footer footer footer footer scrollup";
   padding-top: 70px;
 }
@@ -234,6 +236,7 @@ body {
   width: 100%;
   border: solid rgba(255,255,255,0.20) 2px;
   border-radius: 10px;
+
 }
 
 .box2{
@@ -264,6 +267,20 @@ body {
   border-radius: 10px;
 }
 
+.box6{
+  grid-area: box6;
+  width: 100%;
+  border: solid rgba(255,255,255,0.20) 2px;
+  border-radius: 10px;
+}
+
+.box7{
+  grid-area: box7;
+  width: 100%;
+  border: solid rgba(255,255,255,0.20) 2px;
+  border-radius: 10px;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -272,10 +289,12 @@ body {
 
 .cities{
   max-width: 30%;
+  padding: 5px;
 }
 
 .af{
   max-width: 30%;
+  padding: 5px;
 }
 
 
@@ -299,7 +318,7 @@ body {
   font-weight: bold;
   font-family: 'Josefin Sans', sans-serif;
   color: #FFF;
-  padding-top: 15px;
+  padding-top: 35px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
